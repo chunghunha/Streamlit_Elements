@@ -104,9 +104,9 @@ st.divider()  # 👈 구분선
 '# 📚: 콜아웃'
 
 '#### :orange[정보: st.info()]'
-st.info(
+st.info('This is a purely informational message',
     icon="ℹ️",
-    body='''This is a purely informational message
+    body='''
     - :red[빨간색 텍스트]
     - :blue[파란색 텍스트]
     - :green[초록색 텍스트]
