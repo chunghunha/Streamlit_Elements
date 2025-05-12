@@ -93,6 +93,7 @@ st.image("./data/python.png", caption="파이썬 로고", width=500)
 st.audio("./data/After_You.mp3", format="audio/mpeg", loop=True)
 
 '#### :orange[동영상: st.video()]'
+# 'rb' : 바이너리 모드로 파일 열기
 video_file = open("./data/stars.mp4", "rb")
 video_bytes = video_file.read()
 
@@ -103,7 +104,11 @@ st.divider()  # 👈 구분선
 '# 📚: 콜아웃'
 
 '#### :orange[정보: st.info()]'
-st.info('This is a purely informational message', icon="ℹ️")
+st.info(
+    icon="ℹ️",
+    body='''This is a purely informational message
+    이 콜아웃은 정보를 정리해서 보여주는 데, 
+    사용할 수 있습니다.''')
 
 '#### :orange[경고: st.warning()]'
 st.warning('This is a warning message', icon="⚠️")
