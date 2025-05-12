@@ -107,8 +107,10 @@ st.divider()  # 👈 구분선
 st.info(
     icon="ℹ️",
     body='''This is a purely informational message
-    이 콜아웃은 정보를 정리해서 보여주는 데, 
-    사용할 수 있습니다.''')
+    - :red[빨간색 텍스트]
+    - :blue[파란색 텍스트]
+    - :green[초록색 텍스트]
+    - :orange[주황색 텍스트]''')
 
 '#### :orange[경고: st.warning()]'
 st.warning('This is a warning message', icon="⚠️")
